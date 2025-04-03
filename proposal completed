@@ -1,0 +1,39 @@
+# Proposal
+
+## What will (likely) be the title of your project?
+
+177147! it is just like 2048 but instead of 2^11 its 3^11 (yes the game will be multiplicative not additive)
+
+## In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
+
+I will recreate the game 2048, with a score counter and the possibility of different numbers being introduced on each swipe.
+
+## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
+
+I will use Godot to code and create the project. Feature wise I think the scoreboard and possibly if I feel that I really conquered the game I would add a cool animation when bigger numbers combine or a winning message when you finally reach 177147 (seventeen, seventy one, forty seven really rolls off the tongue
+
+## If planning to combine 1051's final project with another course's final project, with which other course? And which aspect(s) of your proposed project would relate to 1051, and which aspect(s) would relate to the other course?
+
+N/A
+
+## If planning to collaborate with 1 or 2 classmates for the final project, list their names, email addresses, and the names of their assigned TAs below.
+
+N/A
+
+## In the world of software, most everything takes longer to implement than you expect. And so it's not uncommon to accomplish less in a fixed amount of time than you hope.
+
+### In a sentence (or list of features), define a GOOD outcome for your final project. I.e., what WILL you accomplish no matter what?
+
+I hope to complete the base mechanics of the game (i.e. numbers combining the new numbers randomly entering the grid
+
+### In a sentence (or list of features), define a BETTER outcome for your final project. I.e., what do you THINK you can accomplish before the final project's deadline?
+
+The better outcome includes the fully functioning workings of the game like different types of numbers (3 or 9) being added randomly into the grid
+
+### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
+
+The best outcome is me adding a scoreboard, adding animations after each block combines and possibly different animations the bigger the numbers.
+
+## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
+
+The next step is use Godot to start to code the project. I will need to research how to make a grid and get that grid to accept live inputs from a keyboard. I think a lot of the mechanics of the game make sense in my head but how to implement them into a game user interface is really what I will be researching the most I think.
