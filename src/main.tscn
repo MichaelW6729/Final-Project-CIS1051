@@ -1,0 +1,37 @@
+[gd_scene load_steps=9 format=3 uid="uid://cdf6mauuamf3f"]
+
+[ext_resource type="Texture2D" uid="uid://h6t4q5axsujt" path="res://assets/Grid.png" id="1_fyndt"]
+[ext_resource type="Texture2D" uid="uid://co7ipelar0ob4" path="res://assets/grid2.png" id="2_kmhfv"]
+[ext_resource type="Script" uid="uid://dnpf0wvcbig27" path="res://src/grid.gd" id="3_rlaii"]
+[ext_resource type="Script" uid="uid://cj8136uasd48s" path="res://src/touch_inputs.gd" id="4_5mrjc"]
+[ext_resource type="PackedScene" uid="uid://bwgodbhtwbxi" path="res://pieces/two_piece.tscn" id="4_rlaii"]
+[ext_resource type="PackedScene" uid="uid://bjc17ukvl40k3" path="res://pieces/four_piece.tscn" id="5_5mrjc"]
+[ext_resource type="Script" uid="uid://c7aq5c5jmujm3" path="res://src/keyboard_inputs.gd" id="5_kf8lf"]
+[ext_resource type="PackedScene" uid="uid://jl7xcxoutn54" path="res://pieces/background_piece.tscn" id="6_5mrjc"]
+
+[node name="Main" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_fyndt")
+
+[node name="Board" type="Sprite2D" parent="."]
+position = Vector2(368.5, 518)
+scale = Vector2(1.73349, 1.6831)
+texture = ExtResource("2_kmhfv")
+
+[node name="Grid" type="Node2D" parent="."]
+script = ExtResource("3_rlaii")
+two_piece = ExtResource("4_rlaii")
+four_piece = ExtResource("5_5mrjc")
+background_piece = ExtResource("6_5mrjc")
+
+[node name="TouchInputs" type="Node2D" parent="."]
+script = ExtResource("4_5mrjc")
+
+[node name="KeyboardInputs" type="Node2D" parent="."]
+script = ExtResource("5_kf8lf")
+
+[connection signal="move" from="TouchInputs" to="Grid" method="_on_touch_inputs_move"]
+[connection signal="move" from="KeyboardInputs" to="Grid" method="_on_keyboard_inputs_move"]

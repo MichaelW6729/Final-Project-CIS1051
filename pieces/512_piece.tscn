@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://dta2l5tpouhm5"]
+
+[ext_resource type="PackedScene" uid="uid://yno23c7hsfqv" path="res://src/piece.tscn" id="1_802lc"]
+[ext_resource type="Texture2D" uid="uid://crdh50rhafxom" path="res://assets/512.svg" id="2_a0vw7"]
+[ext_resource type="PackedScene" uid="uid://sdfo6ot6uit3" path="res://pieces/1024_piece.tscn" id="2_anae8"]
+
+[node name="512Piece" instance=ExtResource("1_802lc")]
+value = 512
+next_value = ExtResource("2_anae8")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_a0vw7")

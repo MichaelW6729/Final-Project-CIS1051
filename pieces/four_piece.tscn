@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjc17ukvl40k3"]
+
+[ext_resource type="PackedScene" uid="uid://bwgodbhtwbxi" path="res://pieces/two_piece.tscn" id="1_keya7"]
+[ext_resource type="PackedScene" uid="uid://defsbg6xs602f" path="res://pieces/eight_piece.tscn" id="2_43u2n"]
+[ext_resource type="Texture2D" uid="uid://vqade5kvskyu" path="res://assets/4.svg" id="2_48hwj"]
+
+[node name="FourPiece" instance=ExtResource("1_keya7")]
+value = 4
+next_value = ExtResource("2_43u2n")
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_48hwj")
