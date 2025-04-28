@@ -4,8 +4,8 @@ extends Node2D
 var width := 4
 var height := 4
 var board := []
-var x_start := 40
-var y_start := 300
+var x_start := 148
+var y_start := 92
 var offset := 100
 var four_piece_chance := 25
 var x_range = []
@@ -24,6 +24,7 @@ func _ready():
 	keyboard_inputs.move.connect(_on_keyboard_inputs_move)
 	
 func make_array():
+	var board = []
 	for i in width:
 		board.append([])
 		for j in height:
@@ -39,7 +40,7 @@ func grid_to_pixel(grid_pos: Vector2) -> Vector2:
 	var total_size = grid_size * tile_size + (grid_size - 1) * tile_spacing
 	
 	var start_x = (500 - total_size) / 2
-	var start_y = (700 - total_size) / 2
+	var start_y = (600 - total_size) / 2
 
 	var x = start_x + grid_pos.x * (tile_size + tile_spacing)
 	var y = start_y + grid_pos.y * (tile_size + tile_spacing)
@@ -68,7 +69,7 @@ func is_blank_space():
 				return true
 	return false
 #The functions above help with getting the grid visible
-#While ALL functions in this code were inspired from many youtube videos,
+#While all functions in this code were inspired from many youtube videos,
 #the section of code above is in no way mine (except the array and ready functions)
 #I STOLE THESE FROM MULTIPLE YOUTUBE TUTORIALS AND ADJUSTED THEM FOR MY GRID
 #THEY ARE NOT MY ORIGINAL CODE, I REPEAT THEY ARE NOT MINE
@@ -84,7 +85,7 @@ func combine_pieces():
 func move_pieces(direction: Vector2):
 	var merge = []
 	var combined = combine_pieces()
-	#var return_false = false
+	var return_false = false
 	var x_piece = 0
 	var y_piece = 0
 	var check_position = Vector2(0,0)
